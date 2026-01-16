@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "mcp__lenny-advisor__list_lenny_topics"
+    ]
+  }
+}
