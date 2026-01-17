@@ -1,6 +1,6 @@
 {
   "name": "lenny-for-claude",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Product advice from Lenny's Podcast for Claude - 6,400+ insights from 298 episodes",
   "type": "module",
   "main": "dist/index.js",
