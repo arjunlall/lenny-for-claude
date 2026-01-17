@@ -1,5 +1,7 @@
 # Lenny for Claude
 
+[![npm version](https://img.shields.io/npm/v/lenny-for-claude.svg)](https://www.npmjs.com/package/lenny-for-claude)
+
 Product advice from [Lenny's Podcast](https://www.lennyspodcast.com/) for Claude. Get insights from 298 episodes with product leaders at Stripe, Airbnb, Figma, Notion, and 200+ other companies.
 
 ## What is this?
@@ -13,7 +15,7 @@ An MCP server and Claude Code plugin that surfaces relevant product advice from 
 ### Claude Code (CLI)
 
 ```bash
-claude mcp add lenny-for-claude -- npx lenny-for-claude
+claude mcp add lenny-for-claude -- npx -y lenny-for-claude
 ```
 
 Or manually add to `~/.claude.json`:
@@ -23,7 +25,7 @@ Or manually add to `~/.claude.json`:
   "mcpServers": {
     "lenny-for-claude": {
       "command": "npx",
-      "args": ["lenny-for-claude"]
+      "args": ["-y", "lenny-for-claude"]
     }
   }
 }
@@ -38,7 +40,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
   "mcpServers": {
     "lenny-for-claude": {
       "command": "npx",
-      "args": ["lenny-for-claude"]
+      "args": ["-y", "lenny-for-claude"]
     }
   }
 }
