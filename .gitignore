@@ -25,3 +25,4 @@ transcripts/
 
 # Temporary files
 *.tmp
+.claude/
