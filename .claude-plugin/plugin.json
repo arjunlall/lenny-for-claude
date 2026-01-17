@@ -1,15 +1,15 @@
 {
-  "name": "lenny-advisor",
+  "name": "lenny-for-claude",
   "version": "1.0.0",
   "description": "Product advice from Lenny's Podcast - 6,400+ insights from 298 episodes with founders and product leaders",
   "author": {
-    "name": "Arjun"
+    "name": "Arjun Lall"
   },
-  "repository": "https://github.com/arjun/lenny-advisor",
+  "repository": "https://github.com/arjunlall/lenny-for-claude",
   "license": "MIT",
   "keywords": ["product", "advice", "lenny", "podcast", "planning", "growth", "pricing"],
   "mcpServers": {
-    "lenny-advisor": {
+    "lenny-for-claude": {
       "command": "node",
       "args": ["${CLAUDE_PLUGIN_ROOT}/dist/index.js"]
     }
@@ -21,7 +21,7 @@
         "hooks": [
           {
             "type": "prompt",
-            "prompt": "Plan mode was just entered. Before writing the plan, use the mcp__lenny-advisor__get_product_advice tool to find relevant insights from Lenny's Podcast based on what the user wants to build. Present the top 3-5 insights clearly labeled as 'Lenny's Podcast Insights' with the guest name and episode, then incorporate them into your planning.",
+            "prompt": "Plan mode was just entered. Before writing the plan, use the mcp__lenny-for-claude__get_product_advice tool to find relevant insights from Lenny's Podcast based on what the user wants to build. Present the top 3-5 insights clearly labeled as 'Lenny's Podcast Insights' with the guest name and episode, then incorporate them into your planning.",
             "timeout": 60
           }
         ]

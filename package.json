@@ -1,11 +1,11 @@
 {
-  "name": "lenny-advisor-mcp",
-  "version": "0.1.0",
-  "description": "MCP server that surfaces product advice from Lenny's Podcast archive",
+  "name": "lenny-for-claude",
+  "version": "1.0.0",
+  "description": "Product advice from Lenny's Podcast for Claude - 6,400+ insights from 298 episodes",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "lenny-advisor-mcp": "dist/index.js"
+    "lenny-for-claude": "dist/index.js"
   },
   "scripts": {
     "build": "tsc",
@@ -17,12 +17,18 @@
   "keywords": [
     "mcp",
     "claude",
+    "claude-code",
     "lenny",
     "product-management",
-    "advice"
+    "advice",
+    "podcast"
   ],
-  "author": "",
+  "author": "Arjun Lall",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arjunlall/lenny-for-claude"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
     "zod": "^3.23.0"

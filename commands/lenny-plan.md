@@ -1,6 +1,6 @@
 ---
 description: Enter plan mode with relevant product advice from Lenny's Podcast
-allowed-tools: mcp__lenny-advisor__get_product_advice, mcp__lenny-advisor__list_lenny_topics, EnterPlanMode
+allowed-tools: mcp__lenny-for-claude__get_product_advice, mcp__lenny-for-claude__list_lenny_topics, EnterPlanMode
 ---
 
 # Lenny-Informed Planning

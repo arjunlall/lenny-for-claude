@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
- * Lenny's Podcast Advisor MCP Server
+ * Lenny for Claude - MCP Server
  *
- * Provides product advice from Lenny's Podcast archive to Claude Code.
+ * Provides product advice from Lenny's Podcast archive to Claude.
  */
 
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
@@ -47,18 +47,18 @@ async function main() {
     search = new AdviceSearch(index);
     const stats = search.getStats();
     console.error(
-      `[lenny-advisor] Loaded ${stats.totalChunks} advice chunks from index`
+      `[lenny-for-claude] Loaded ${stats.totalChunks} advice chunks from index`
     );
   } catch (error) {
-    console.error(`[lenny-advisor] Failed to load advice index: ${error}`);
+    console.error(`[lenny-for-claude] Failed to load advice index: ${error}`);
     process.exit(1);
   }
 
   // Create MCP server
   const server = new McpServer(
     {
-      name: "lenny-advisor",
-      version: "0.1.0",
+      name: "lenny-for-claude",
+      version: "1.0.0",
     },
     {
       capabilities: {
@@ -188,10 +188,10 @@ Use these topics with the \`get_product_advice\` tool to find relevant insights.
   const transport = new StdioServerTransport();
   await server.connect(transport);
 
-  console.error("[lenny-advisor] Server started, waiting for requests...");
+  console.error("[lenny-for-claude] Server started, waiting for requests...");
 }
 
 main().catch((error) => {
-  console.error("[lenny-advisor] Fatal error:", error);
+  console.error("[lenny-for-claude] Fatal error:", error);
   process.exit(1);
 });

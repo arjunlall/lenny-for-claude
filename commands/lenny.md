@@ -1,6 +1,6 @@
 ---
 description: Get product advice from Lenny's Podcast on any topic
-allowed-tools: mcp__lenny-advisor__get_product_advice, mcp__lenny-advisor__list_lenny_topics
+allowed-tools: mcp__lenny-for-claude__get_product_advice, mcp__lenny-for-claude__list_lenny_topics
 ---
 
 # Lenny's Podcast Advice
